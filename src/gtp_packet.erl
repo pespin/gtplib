@@ -15,8 +15,8 @@
 	 msg_description/1, msg_description_v2/1,
 	 pretty_print/1, ies_to_otel_attrs/1]).
 -export([encode_plmn_id/1]).
--export([decode_v2_user_location_information/2, decode_v1_rai/2]).
--export([encode_v2_user_location_information/1, encode_v1_rai/1]).
+-export([decode_v2_user_location_information/2, decode_v1_rai/2, decode_protocol_config_opts/1]).
+-export([encode_v2_user_location_information/1, encode_v1_rai/1, encode_protocol_config_opts/1]).
 
 -compile([{parse_transform, cut}]).
 -compile({inline,[decode_tbcd/1, decode_fqdn/1,
